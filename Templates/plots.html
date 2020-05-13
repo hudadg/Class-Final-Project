@@ -1,0 +1,26 @@
+{% extends 'layout.html'%}
+
+{% block body%}
+    <h1> Data Visualization</h1>
+    <div class="row">
+        <!-- Total 12 -->
+        <div class="col-md-6">
+            <h3>Distribusi kolom MPG</h3>
+            <div class="chart mt-1" id="dist-type1">
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h3>Distribusi kolom Horsepower</h3>
+            <div class="chart mt-1" id="dist-type2">
+            </div>
+        </div>
+    </div>
+        
+    <script>
+        var dist_type1 = {{data | safe}}
+        var dist_type2 = {{data2 | safe}}
+        // Unutk memunculkan graph plotly di variable dist_type1 
+        Plotly.plot('dist-type1',dist_type1,{})
+        Plotly.plot('dist-type2',dist_type2,{})
+    </script>
+{% endblock body%}
