@@ -8,7 +8,7 @@
     <div class="container pt 5">
         <div class="row justify-content-center">
             <div class="col-md-6 mt-3">
-                <h2> Fill this form for Predict!</h2>
+                <h2> Credit Risk Prediction Form: </h2>
                 <form action="/" method="POST">
                     
 
@@ -16,9 +16,21 @@
 
                     <input type="number" name="age"  placeholder="age of borrower in years" class="form-control form-control-sm mt-2 ">
 
-                    <input type="number" name="NumberOfTime3059DaysPastDueNotWorse" placeholder="Number of times borrower has been 30-59 days past due but no worse in the last 2 years" class="form-control form-control-sm mt-2 ">
+                    <input type="number" name="NumberOfTime3059DaysPastDueNotWorse" placeholder="number of times borrower has been 30-59 days past due but no worse in the last 2 years" class="form-control form-control-sm mt-2 ">
 
-                    <input type="float" name="DebtRatio" max="1" min="0" placeholder="age of borrower in years" class="form-control form-control-sm mt-2 ">
+                    <input type="float" name="DebtRatio" max="1" min="0" placeholder="percentage of monthly expense divided by monthly income" class="form-control form-control-sm mt-2 ">
+
+                    <input type="float" name="MonthlyIncome_AVG"  placeholder="monthly income" class="form-control form-control-sm mt-2 ">
+
+                    <input type="number" name="NumberOfOpenCreditLinesAndLoans"  placeholder="number of open loans and lines of credit" class="form-control form-control-sm mt-2 ">
+
+                    <input type="number" name="NumberOfTimes90DaysLate"  placeholder="number of times borrower has been 90 days or more past due" class="form-control form-control-sm mt-2 ">
+
+                    <input type="number" name="NumberRealEstateLoansOrLines"  placeholder="number of mortgage and real estate loans including home equity lines of credit" class="form-control form-control-sm mt-2 ">
+
+                    <input type="number" name="NumberOfTime60-89DaysPastDueNotWorse"  placeholder="number of times borrower has been 60-89 days past due but no worse in the last 2 years" class="form-control form-control-sm mt-2 ">
+
+                    <input type="number" name="NumberOfDependents_MV"  placeholder="number of dependents in family" class="form-control form-control-sm mt-2 ">
                     
                     <button type="submit" class="btn btn-info mt-4">Let's Predict</button>
                     

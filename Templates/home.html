@@ -1,0 +1,22 @@
+{% extends 'layout.html'%}
+
+{% block body%}
+<div class="container">
+    <h1>Credit Default Risk</h1>
+    <h3><b>Columns Desc:</b>
+
+        <h4>- <b>SeriousDlqin2yrs:</b> Person experienced 90 days past due delinquency or worse Y/N</h4>
+        <h4>- <b>RevolvingUtilizationOfUnsecuredLines:</b> Total balance on credit cards and personal lines of credit except real estate and no installment debt like car loans divided by the sum of credit limits percentage</h4>
+        <h4>- <b>age:</b> Age of borrower in years integer</h4>
+        <h4>- <b>NumberOfTime3059DaysPastDueNotWorse:</b> Number of times borrower has been 30-59 days past due but no worse in the last 2 years. integer</h4>
+        <h4>- <b>DebtRatio:</b> Monthly debt payments, alimony,living costs divided by monthy gross income percentage</h4>
+        <h4>- <b>MonthlyIncome:</b> Monthly income real</h4>
+        <h4>- <b>NumberOfOpenCreditLinesAndLoans:</b> Number of Open loans (installment like car loan or mortgage) and Lines of credit (e.g. credit cards) integer</h4>
+        <h4>- <b>NumberOfTimes90DaysLate:</b> Number of times borrower has been 90 days or more past due. integer</h4>
+        <h4>- <b>NumberRealEstateLoansOrLines:</b> Number of mortgage and real estate loans including home equity lines of credit integer</h4>
+        <h4>- <b>NumberOfTime60-89DaysPastDueNotWorse:</b> Number of times borrower has been 60-89 days past due but no worse in the last 2 years. integer</h4>
+        <h4>- <b>NumberOfDependents:</b> Number of dependents in family excluding themselves (spouse, children etc.) integer</h4>
+
+    </h4>
+</div>
+{% endblock body%}

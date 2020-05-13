@@ -8,4 +8,7 @@ def prediction(data):
     df = DataFrame(data,index=[0])
 
     hasil = model.predict(df)
-    return round(hasil[0])
+    if hasil == 1 :
+        return 'Default'
+    else :
+        return 'Not Default'
